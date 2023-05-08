@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.full{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: #1a0033;
+    gap: 20px;
+    height: 200%;
+
+}
+
+.image{
+    height: 250px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.4;
+    filter: drop-shadow( rgb(39, 2, 39));
+}
+
+.writings{
+    margin: 30px;
+    margin-top: 10px;
+}
+
+.first{
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.insights{
+    color: #9933ff;
+}
+
+.second{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.third{
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.fourth{
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+
+.fifth{
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.sixth{
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+
+.seventh{
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.eight{
+    font-weight: 100;
+    font-size: 8px;
+}
+
+@media screen and (min-width: 768px) and ( max-width:1024px){
+    .full{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .image{
+        height: 100%;
+        border-radius: 0;
+
+    }
+}
+@media screen and (min-width:1025px){
+    .full{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 90px;
+        margin-left: 90px;
+        margin-right: 90px;
+        padding: 0;
+    }
+    .image{
+        height: 100%;
+        border-radius: 0;
+        grid-column: 2;
+        grid-row: 1/2;
+    }
+    .writings{
+        grid-column: 1;
+        grid-row: 2/1;
+        padding: 50px;
+    }
+    .first{
+        text-align: center;
+        font-size: 39px;
+        padding-top: 30px;
+    }
+
+    .second{
+        font-size: 24px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 30px;
+
+    }
+}
